@@ -1,0 +1,28 @@
+.title #{model.get('name')}
+
+if model.get('cookingtime')
+	.cookingtime Cooking time : #{model.get('cookingtime')}
+if model.get('preparationtime')
+	.preparationtime Preparation time : #{model.get('preparationtime')}
+if model.get('servenumber')
+	.serves Serves #{model.get('servenumber')}
+if model.get('servenumber')
+
+img(src="recipes/#{model.get('imagename')}")
+
+ul.ingredients
+	for attr, key in model.get('ingredients')
+		if Array.isArray(attr)
+			for subattr,index in attr
+				li(class="sublist-#{index}") #{subattr}
+		else
+			li #{attr}
+
+ul.instructions
+	for attr in model.get('instructions')
+		li #{attr}
+
+
+
+  
+  

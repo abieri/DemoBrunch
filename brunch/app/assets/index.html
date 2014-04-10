@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo Brunch</title>
+    <link rel="stylesheet" href="css/app.css">
+
+    <script type="text/javascript" src="js/vendor.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+      var onDeviceReadyAlert = function() {
+        require('initialize');  
+      }
+      if (window.cordova) {
+        document.addEventListener("deviceready",onDeviceReadyAlert , false);
+      }else{
+        onDeviceReadyAlert();
+      }
+      
+      
+   </script>
+  </head>
+  <body>
+
+    <div class="views"></div>
+    <div class="nav"></div>
+
+  </body>
+</html>

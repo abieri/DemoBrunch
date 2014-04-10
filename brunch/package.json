@@ -1,0 +1,30 @@
+{
+  "author": "Creative Licence Digital",
+  "name": "mla-cc",
+  "description": "MLA Cut Chart",
+  "version": "0.0.1",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.6.25 || 0.8 || 0.9"
+  },
+  "scripts": {
+    "start": "brunch watch --server",
+    "test": "brunch test"
+  },
+  "dependencies": {
+    "javascript-brunch": "> 1.0 < 1.8",
+    "sass-brunch": "> 1.0 < 1.8",
+    "css-brunch": "> 1.0 < 1.8",
+    "jade-brunch": "> 1.0 < 1.8",
+    "uglify-js-brunch": "> 1.0 < 1.8",
+    "clean-css-brunch": "> 1.0 < 1.8",
+    "auto-reload-brunch": "~1.7.0",
+    "compass-brunch": "0.0.2",
+    "coffee-script-brunch": "~1.7.2"
+  },
+  "devDependencies": {}
+}
